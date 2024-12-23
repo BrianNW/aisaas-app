@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils"
 
 const inter = IBM_Plex_Sans({ 
   subsets: ["latin"], 
@@ -19,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={cn}>{children}</body>
     </html>
   );
 }
